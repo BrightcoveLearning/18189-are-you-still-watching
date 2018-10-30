@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Untitled Document</title>
-  <link href="//players.brightcove.net/videojs-overlay/1/videojs-overlay.css" rel="stylesheet">
+  <link href="https://players.brightcove.net/videojs-overlay/1/videojs-overlay.css" rel="stylesheet">
   <style>
     /* hide the overlay */
     .hide-overlay .vjs-overlay {
@@ -31,14 +31,14 @@
 
 <body>
 
-  <video id="myPlayerID"
+  <video-js id="myPlayerID"
     data-video-id="2026627037001"
     data-account="1752604059001"
     data-player="default"
     data-embed="default"
     data-application-id
     class="video-js"
-    controls></video>
+    controls></video-js>
 
   <p>Show "Are you still there?" message after <input id="timeCheckOption" value="5" size="5" style="width:20px;text-align:center;" /> seconds.</p>
   <p>If the message is not clicked, pause the video after <input id="timeOutOption" value="5" size="5" style="width:20px;text-align:center;" /> seconds.</p>
@@ -49,10 +49,10 @@
     <p>Current position: <span id="currentPosition"></span> seconds</p>
   </fieldset>
 
-  <script src="//players.brightcove.net/1752604059001/default_default/index.min.js"></script>
-  <script src="//players.brightcove.net/videojs-overlay/1/videojs-overlay.min.js"></script>
+  <script src="https://players.brightcove.net/1752604059001/default_default/index.min.js"></script>
+  <script src="https://players.brightcove.net/videojs-overlay/1/videojs-overlay.min.js"></script>
   <script type="text/javascript">
-    videojs('myPlayerID').ready(function() {
+    videojs.getPlayer('myPlayerID').ready(function() {
       // +++ Initialize variables +++
       var myPlayer = this,
         msgShown = false,

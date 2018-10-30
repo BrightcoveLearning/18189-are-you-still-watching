@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Untitled Document</title>
-  <link href="//players.brightcove.net/videojs-overlay/1/videojs-overlay.css" rel="stylesheet">
+  <link href="https://players.brightcove.net/videojs-overlay/1/videojs-overlay.css" rel="stylesheet">
   <style>
     /* hide the overlay */
 
@@ -38,22 +38,22 @@
 
 <body>
 
-  <video id="myPlayerID"
+  <video-js id="myPlayerID"
     data-playlist-id="2764931906001"
     data-account="1752604059001"
     data-player="BJlTEWMCAZ"
     data-embed="default"
     data-application-id
     class="video-js"
-    controls></video>
+    controls></video-js>
 
   <ol class="vjs-playlist"></ol>
 
 
-  <script src="//players.brightcove.net/1752604059001/BJlTEWMCAZ_default/index.min.js"></script>
-  <script src="//players.brightcove.net/videojs-overlay/1/videojs-overlay.min.js"></script>
+  <script src="https://players.brightcove.net/1752604059001/BJlTEWMCAZ_default/index.min.js"></script>
+  <script src="https://players.brightcove.net/videojs-overlay/1/videojs-overlay.min.js"></script>
   <script type="text/javascript">
-    videojs('myPlayerID').ready(function() {
+    videojs.getPlayer('myPlayerID').ready(function() {
       var myPlayer = this,
         currentVideoIndex = 0,
         firstVideo = true,
