@@ -1,6 +1,6 @@
 <!-- BE SURE TO UPDATE NAME AND LINK TO DOC -->
 
-# 18431-play-video-end-playlist
+# 18189-are-you-still-watching
 For more information about this sample see: https://support.brightcove.com/brightcove-player-sample-are-you-still-watching.
 
 <p>The purpose and structure of files in this repo are:</p>
